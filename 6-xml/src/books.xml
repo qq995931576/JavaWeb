@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+    <book sn="abc01">
+        <name>三国演义</name>
+        <price>25</price>
+        <author>罗贯中</author>
+    </book>
+    <book sn="abc02">
+        <name>水浒传</name>
+        <price>25</price>
+        <author>施耐恩</author>
+    </book>
+</books>

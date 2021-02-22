@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="Demo/script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //不传参数是获取，传参数是设置
+            // alert($("div").html());//获取:    我是div标签 <span>我是div中的span</span>
+            // $("div").html("<h1>我是div中的标题1</h1>");//设置
+
+            //不传参数是获取，传参数是设置
+            // alert($("div").text());//获取       我是div标签 我是div中的span
+            // $("div").text("<h1>我是div中的标题1</h1>")//设置
+
+            //不传参数是获取，传参数是设置
+            // $("button").click(function (){
+            //     alert($("#username").val());//获取
+            //     $("#username").val("阿昌加油");//设置
+            // });
+
+////val 方法同时设置多个表单项的选中状态：
+            //批 量 操 作 单 选
+            // $(":radio").val(["radio2"]);
+            // 批 量 操 作 筛 选 框 的 选 中 状 态
+            // $(":checkbox").val(["checkbox3","checkbox2"]);
+            // 批 量 操 作 多 选 的 下 拉 框 选 中 状 态
+            // $("#multiple").val(["mul2","mul3","mul4"]);
+            // 操 作 单 选 的 下 拉 框 选 中 状 态
+            // $("#single").val(["sin2"]);
+            // 复合操作状态
+            // $("#single",":checkbox",":radio").val(["radio1","checkbox3","sin1"]);
+
+
+        })
+    </script>
+</head>
+<body>
+<div>我是div标签 <span>我是div中的span</span></div>
+<input type="text" name="username" id="username">
+<button>操作输入框</button>
+
+
+单选：
+<input name="radio" type="radio" value="radio1"/>radio1
+<input name="radio" type="radio" value="radio2"/>radio2 <br/>
+多选：
+<input name="checkbox" type="checkbox" value="checkbox1"/>checkbox1
+<input name="checkbox" type="checkbox" value="checkbox2"/>checkbox2
+<input name="checkbox" type="checkbox" value="checkbox3"/>checkbox3 <br/>
+下拉多选 ：
+<select id="multiple" multiple="multiple" size="4">
+    <option value="mul1">mul1</option>
+    <option value="mul2">mul2</option>
+    <option value="mul3">mul3</option>
+    <option value="mul4">mul4</option>
+</select> <br/>
+下拉单选 ：
+<select id="single">
+    <option value="sin1">sin1</option>
+    <option value="sin2">sin2</option>
+    <option value="sin3">sin3</option>
+</select>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function func() {
+            alert("无参函数func1()被调用")
+        }
+
+        function func(a, b) {
+            alert("有参函数func2(a,b)被调用")
+        }
+
+        //最新的同名函数会覆盖上一次的同名函数
+        //js不允许函数重载
+        func();//有参函数func2(a,b)被调用
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>

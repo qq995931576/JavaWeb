@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            //现在需要我们使用JS代码来创建html标签,并显示在页面上
+            //标签的内容:    <div>阿昌，冲冲冲</div>
+            var divObj = document.createElement("div");// 这时还在内存中: <div></div>
+
+            //方式一:
+            divObj.innerHTML = "阿昌，冲冲冲";// <div>阿昌，冲冲冲</div>，但还在内存中
+            //appendChild(): 添加子元素
+            //要求在页面加载完后使用添加，所以需要在  window.onload=function(){}里调用。
+            document.body.appendChild(divObj);
+
+            //方式二:
+            var textNode = document.createTextNode(" 阿昌，一定成功");// 文本节点对象 #阿昌，一定成功
+            divObj.appendChild(textNode);
+        }
+    </script>
+
+</head>
+<body>
+</body>
+</html>

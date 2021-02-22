@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        //表示要求字符串中，是否包含字母e
+        // var patt = new RegExp("e");
+        // var patt = /e/;   //另一种写法
+        // var patt =/[abc]/; //表示要求字符串中，是否包含字母a或b或c任意一个
+        // var patt = /[a-z]/; //表示要求字符串中，是否包含小写字母a-z中的任意一个
+        // var patt = /[A-Z]/;  //表示要求字符串中，是否包含大写字母A-Z中的任意一个
+        // var patt = /[0-9]/;   //表示要求字符串中，是否包含数字0-9中的任意一个
+        // var patt = /\w/;    //表示是否包含，字母、数字、下划线任意一个
+        // var patt =/a+/;     //表示要求字符串中是否包含至少一个a
+        // var patt =/a*/;      //表示要求字符串是否包含零个或多个a
+        // var patt =/a?/;      //表示要求字符串是否包含一个或零个a
+        // var patt =/a{3}/;    //表示要求字符串是否包含连续3个a
+        // var patt =/a{3,5}/;  //表示要求字符串是否包含至少3个连续的a，最多5个连续的a
+        // var patt =/a{3,}/;    //表示要求字符串是否包含至少3个连续的a
+        // var patt =/a$/;       //表示要求字符串必须以a结尾
+        // var patt =/^a/;       //表示要求字符串必须以a开头
+
+        //开头加了^ ，结尾加了$。条件就从是否包含编程了必须完全
+
+        var patt = /^a{3,5}$/;   //表示要求字符串从头到尾都必须完全匹配
+
+        var str = "dabcaaab";
+
+        alert(patt.test(str));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

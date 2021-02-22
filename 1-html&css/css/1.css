@@ -1,0 +1,8 @@
+/* 需求 1：分别定义两个 div、span 标签，分别修改每个 div 标签的样式为：边框 1 个像素，实线，红色。*/
+div {
+    border: red 1px solid;
+}
+
+span {
+    border: red 1px solid;
+}

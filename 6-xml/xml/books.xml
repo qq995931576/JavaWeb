@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    <?xml version="1.0" encoding="utf-8" ?>
+    以上内容就是xml文件的声明
+    version="1.0"       version: 表示xml的版本
+    encoding="utf-8"    encoding: 表达xml文件的编码
+-->
+
+<books> <!--表示多个图书信息-->
+
+    <boos sn="SN16839886ADJF">  <!--表示一个图书      sn信息表示图书序列号 -->
+        <name>时间简史</name>     <!--name标签表示书名-->
+        <author>霍金</author>    <!--author标签表示作者-->
+        <price>45</price>        <!--price标签表示价格-->
+    </boos>
+    <boos sn="SN16839886ADLA">  <!--表示一个图书      sn信息表示图书序列号 -->
+        <name>Java从入门到入土</name>     <!--name标签表示书名-->
+        <author>阿昌</author>    <!--author标签表示作者-->
+        <price>9.9</price>        <!--price标签表示价格-->
+    </boos>
+
+</books>

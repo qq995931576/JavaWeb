@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <script type="text/javascript">
+        // json的定义
+        var jsonObj1 = {
+            "key1": 12,
+            "key2": "abcdefg",
+            "key3": false,
+            "key4": [55, true, "31t"],
+            "key5": {
+                "key5_1": 551,
+                "key5_2": "key5_2_value",
+            },
+            "key6": [{
+                "key6_1_1": "1ss3",
+                "key6_1_2": 99
+            }, {
+                "key6_2_1": "1ss4",
+                "key6_2_2": 1231
+            }]
+        };
+        // alert(typeof(jsonObj));//object   json就是一个对象类型
+
+        // json的访问
+        // alert(jsonObj.key1);//12
+        // alert(jsonObj.key2);//abcdefg
+        // alert(jsonObj.key3);//false
+        //  alert(jsonObj.key4);//f55,true,"31t"
+        // json中数组值的遍历
+        // for (var i = 0;i<jsonObj.key4.length;i++){
+        // 	alert(jsonObj.key4[i])
+        // }
+        // alert(jsonObj.key5.key5_1);//551
+        // alert(jsonObj.key5.key5_2);//key5_2_value
+        // alert(jsonObj.key6);//得到json数组
+        //取出每一个元素都是json对象
+        // alert(jsonObj.key6[0].key6_1_1);//1ss3
+        // alert(jsonObj.key6[0].key6_1_2);//99
+        // alert(jsonObj.key6[1].key6_2_1);//1ss4
+        // alert(jsonObj.key6[1].key6_2_2);//1231
+
+
+        // json对象转字符串
+        // var jsonObjString = JSON.stringify(jsonObj1);//特别想Java中对象的toString()方法
+        // alert(jsonObjString);
+        //
+        // // json字符串转json对象
+        // var jsonObj2 = JSON.parse(jsonObjString);
+        // alert(jsonObj2);
+        // alert(jsonObj2.key1);//12
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

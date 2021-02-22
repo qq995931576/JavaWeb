@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function onchangeFun() {
+            alert("女神已经改变了");
+        }
+
+        window.onload = function () {
+            //1.获取标签对象
+            var elementById = document.getElementById("1001");
+            //2.通过标签对象.事件名 = function(){}
+            elementById.onchange = function () {
+                alert("男神已经改变了")
+            }
+        }
+    </script>
+</head>
+<body>
+请选择你心中的女神:
+<!--    静态注册onchange事件-->
+<select onchange="onchangeFun();">
+    <option>--女神--</option>
+    <option>佳佳</option>
+    <option>思思</option>
+    <option>雅雅</option>
+</select>
+
+<br/>
+
+请选择你心中的男神:
+<!--    动态注册onchange事件-->
+<select id="1001">
+    <option>--男神--</option>
+    <option>昌昌</option>
+    <option>明明</option>
+    <option>珏珏</option>
+</select>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("原生js页面加载完成之后1");
+        }
+        window.onload = function () {
+            alert("原生js页面加载完成之后2");
+        }
+        window.onload = function () {
+            alert("原生js页面加载完成之后3");
+        }
+
+        //jQuery的页面加载完成之后
+
+        $(function () {
+            alert("jQuery的页面加载完成之后2");
+        });
+        $(function () {
+            alert("jQuery的页面加载完成之后3");
+        });
+        $(function () {
+            alert("jQuery的页面加载完成之后1");
+        });
+
+    </script>
+</head>
+<body>
+<button>我是按钮</button>
+
+<iframe src="http://www.baidu.com"></iframe>
+<img src="http://localhost:8080/1.jpg" alt=""/>;
+</body>
+</html>

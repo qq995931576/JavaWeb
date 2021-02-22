@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="Demo/script/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //attr():
+            // alert($(":checkbox:first").attr("name"));//checkbox   获取name的值
+            $(":checkbox").attr("name", "abc")//   设置name的值为abc
+
+            // alert($(":checked:first").attr("checked"))//undefined    官方返回undefined是一个错误
+            // alert($(":checked").prop("checked"));//ture
+            // $(":checked").prop("checked",false);//设置全不选
+
+            // $(":checkbox:first").attr("abc","value");//写入自己自定义的值
+
+        })
+    </script>
+</head>
+<body>
+多选：
+<input name="checkbox" type="checkbox" checked="checked" value="checkbox1"/>checkbox1
+<input name="checkbox" type="checkbox" checked=checked value="checkbox2"/>checkbox2
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        // function fun(){
+        // alert( arguments.length );//3 可看参数个数
+        // alert( arguments[0]);
+        // alert( arguments[1]);
+        // alert( arguments[2]);
+
+        //     for (var i = 0 ; i < arguments.length;i++){
+        //         alert(arguments[i]);
+        //     }
+        //     alert("无参函数fun()调用");
+        // }
+        // fun(1,"abc",3);
+
+        //需求: 要求编写一个函数。用于计算所有参数相加的和并返回。
+        function sum(num1, num2) {
+            var result = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                if (typeof (arguments[i]) == "number") {
+                    result += arguments[i];
+                }
+            }
+            return result;
+        }
+
+        alert(sum(1, 2, 3, "abc", 55));
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
